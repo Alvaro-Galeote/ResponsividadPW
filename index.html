@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+              * {
+                box-sizing: border-box;
+                }
+                body{
+                  background-color: aqua;
+                }
+
+            .row::after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+            [class*="col-"] {
+                float: left;
+                padding: 15px;
+            }
+
+            html {
+                font-family: "Lucida Sans", sans-serif;
+            }
+            .header {
+                background-color:#47ffedd8 ;
+                color: #28a75bfa;
+                padding: 15px;
+            }
+            .menu ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .menu li {
+                padding: 8px;
+                margin-bottom: 7px;
+                background-color: #b5b3f53f;
+                color: #a6ce30;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            }
+            .menu li:hover {
+                background-color: #36cc00;
+            }
+            .aside {
+                background-color: #F5DEB3;
+                padding: 15px;
+                color: #000080;
+                text-align: center;
+                font-size: 14px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            }
+                .subcontenido div,video{
+                text-align: center;
+                border-style: groove;
+                border-radius: 15px;
+                border-color: darkblue  ;
+                margin: 15px;
+              }
+              .col-6{
+                text-align: center;
+              }
+              .col-6 .subcontenido{
+                      background-color: rgb(98, 27, 49);
+                      text-align: left;
+                      padding: 10px 10px 10px 10px;
+              }
+            .footer {
+                background-color: #ff63474d;
+                color: #000080;
+                text-align: center;
+                font-size: 12px;
+                padding: 15px;
+            }
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+
+            @media only screen and (max-width: 768px) {
+                /* For mobile phones: */
+                [class*="col-"] {
+                    width: 100%;
+                }
+            }
+            /* For width smaller than 400px: */
+ /* For width smaller than 400px: */
+               .aside {
+                width: 250px;
+                height: 150px;
+                background-image: url("media/AlvaroGaleoteT.jpg");
+                background-size: 300px 150px;
+            }
+                /* For width 400px and larger: */
+                  @media only screen and (max-width: 768px) {
+                  .aside {
+                  background-color:aqua ;
+                  background-image: url("media/imagen2.jpg");
+                  
+              }
+              .mapa-contenido iframe,video{
+                  width: auto;
+              }
+            }
+            </style>
+            <title>Pr&aacute;ctica 9</title>
+      </head>
+
+      <body>
+
+          <div class="header">
+            <h1>Unidad 2</h1>
+          </div>
+
+          <div class="row">
+
+                <div class="col-3 menu">
+                  <ul>
+                    <li><a href="https://alvaro-galeote.github.io/practica1_PW_U1/">Pr&aacute;ctica 1</a></li>
+                    <li><a href="https://alvaro-galeote.github.io/LineaDelTiempo_PW/">Pr&aacute;ctica 2</a></li>
+                    <li><a href="https://alvaro-galeote.github.io/Listas/">Pr&aacute;ctica 3</a></li>
+                    <li><a href="https://alvaro-galeote.github.io/TablasPW_LT/">Pr&aacute;ctica 4</a></li>
+                    <li><a href="https://alvaro-galeote.github.io/Formulario1_PW/">Pr&aacute;ctica 5</a></li>
+                    <li><a href="https://alvaro-galeote.github.io/PresentacionCV-PW/">Pr&aacute;ctica 6</a></li>
+                    <li><a href="https://alvaro-galeote.github.io/GaleriaCiudadPW/">Pr&aacute;ctica 7</a></li>
+                    <li><a href="https://alvaro-galeote.github.io/Practica8_PW/">Pr&aacute;ctica 8</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-6">
+                  <h1>Mi CV</h1>
+                      <div>
+                           <video autoplay controls src="media/AlvaroGaleotePresentacion.mp4"  width="340" height="400"></video>
+                      </div>
+
+                      <div class="mapa-contenido">
+                           <h3>Direcci&oacute;n</h3>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236.00738732239455!2d-97.09489588889886!3d18.83741161857055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c5029fa2b86ed1%3A0xa7c2988f7d25127d!2sSur%2011%201545%2C%20Centro%2C%2094300%20Orizaba%2C%20Ver.!5e0!3m2!1ses-419!2smx!4v1676918980919!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+
+                      <h3 style="text-align: center;">Datos</h3>
+
+                      
+                      
+                      <div class="subcontenido">
+                            <h2>Datos personales</h2>
+                                  <ul>
+                                      <li>Nombre completo: <strong>Alvaro Galeote Tecuateque</strong></li>
+                                      <li>Fecha de nacimiento: <strong>24/09/2002</strong></li>
+                                      <li>Lugar de nacimiento: <strong>Ciudad de Zongolica</strong></li>
+                                  </ul>
+
+                            <h2>Formaci&oacute;n acad&eacute;mica</h2>
+                                  <ul>
+                                      <li>2020-2025: <strong>Universidad: Instituto Tecnol&oacute;gico de Orizaba</strong></li>
+                                      <li>2017-2020: <strong>Preparatoria: COBAEV 49</strong></li>
+                                      <li>2014-2017: <strong>Secundaria: 20 de Noviembre</strong></li>
+                                  </ul>
+
+                            <h2>Experiencia Laboral</h2>
+                                  <ul>
+                                      <li>2020-2025: <strong>Practicante en el Instituto Tecnol&oacute;gico de Orizaba</strong></li>
+                                      <li>2017-2020: <strong>Profesor de Programación competitiva</strong></li>
+                                      <li>2016-2022: <strong>Administrador de un comercio de libros</strong></li>
+                                  </ul>
+                            <hr color="black">
+                      </div>
+                </div>
+
+              <div class="col-3 right">
+                          <div class="aside">
+                            
+                          </div>
+                </div>
+
+          </div>
+
+          <div class="footer">
+            <p>Cambiar el tama&ntilde;o de la ventana del navegador para ver c&oacute;mo responde el contenido al redimensionamiento.</p>
+          </div>
+
+      </body>
+</html>
